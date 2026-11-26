@@ -59,6 +59,46 @@ The project is designed as a frontend application without a custom backend or da
 - **Lovable** – AI-assisted application development.
 - **AI Integration** – Generating contextual email drafts, task plans, and research summaries.
 - **Local Storage** – Optional client-side data persistence.
+- **Git and GitHub** – Version control and project hosting.
+
+## Project Structure
+
+The project follows a typical React and Vite frontend structure.
+
+```text
+AI-Workplace-Productivity-Assistant/
+│
+├── public/
+│   └── assets/                 # Public assets and images
+│
+├── src/
+│   ├── components/             # Reusable UI components
+│   │   ├── Sidebar
+│   │   ├── Dashboard
+│   │   └── UI components
+│   │
+│   ├── pages/                  # Application pages
+│   │   ├── EmailGenerator
+│   │   ├── TaskPlanner
+│   │   └── ResearchAssistant
+│   │
+│   ├── hooks/                  # Custom React hooks
+│   ├── lib/                    # Utilities and helper functions
+│   ├── App.tsx                 # Main application component
+│   ├── main.tsx                # Application entry point
+│   └── index.css               # Global styles
+│
+├── .env.example                # Example environment variables
+├── .gitignore                  # Files excluded from Git
+├── index.html                  # HTML entry point
+├── package.json                # Project dependencies and scripts
+├── package-lock.json            # Dependency lock file
+├── tailwind.config.js           # Tailwind configuration
+├── vite.config.ts               # Vite configuration
+└── README.md                    # Project documentation
+```
+
+*Note: The structure above is a suggested layout. Your actual Lovable-generated project may have a different folder structure or file names.*
 
 ## Setup Instructions
 
@@ -149,6 +189,12 @@ AI features require a configured AI integration to generate contextual responses
 - Improve schedule customisation.
 - Add export options for emails and task plans.
 - Enhance accessibility and user experience.
+
+## Author
+
+**Ammarah Gabriels**
+
+- GitHub: `https://daycraft-mail-mind.lovable.app/`
 
 ## License
 
