@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## App rules
+- AI prompts and gateway calls live in src/lib/ai.functions.ts / ai.server.ts (server functions); the key never reaches the browser.
+- Tool inputs and outputs persist via useStoredState (localStorage) — the user asked for no database.
+- Shared result UI (edit/copy/regenerate + disclaimer) is src/components/app/ResultPanel.tsx; reuse it for new tools.
